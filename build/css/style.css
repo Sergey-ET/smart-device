@@ -385,11 +385,27 @@ template {
 }
 
 @font-face {
-  font-style: normal;
+  font-family: "PT Mono";
+  src: url("../fonts/ptmono-regular.woff2") format("woff2"), url("../fonts/ptmono-regular.woff") format("woff");
   font-weight: 400;
-  font-family: "";
+  font-style: normal;
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2"), url("../fonts/.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/roboto-condensed-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/roboto-condensed-bold.woff2") format("woff2"), url("../fonts/roboto-condensed-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 *,
@@ -410,9 +426,9 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
-  font-family: "Placeholder", "Arial", sans-serif;
-  color: #000000;
+  line-height: 22px;
+  font-family: "PT Mono", "Courier New", monospace;
+  color: #041827;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -425,7 +441,7 @@ body {
 }
 
 a {
-  color: #000000;
+  color: #041827;
   text-decoration: none;
 }
 
@@ -443,7 +459,7 @@ textarea {
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
   box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #000000;
+  -webkit-text-fill-color: #041827;
 }
 
 input,
@@ -514,13 +530,7 @@ input[type=number] {
 
 select,
 textarea,
-input:matches([type=email],
-[type=number],
-[type=password],
-[type=search],
-[type=tel],
-[type=text],
-[type=url]) {
+input:matches([type=email], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url]) {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
