@@ -14,9 +14,9 @@ body {
 html {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: $fz-default;
   line-height: 22px;
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $ff-ptmono;
   color: $color-black-pearl;
 
   -webkit-font-smoothing: antialiased;
