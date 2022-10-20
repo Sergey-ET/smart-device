@@ -12,7 +12,7 @@ module.exports = {
         requireParamDescription: false,
         requireReturnDescription: false,
         requireReturn: false,
-        prefer: {returns: 'return'},
+        prefer: { returns: 'return' },
       },
     ],
 
@@ -44,7 +44,7 @@ module.exports = {
     // --------------------------------------------
 
     'guard-for-in': 'error',
-    'max-nested-callbacks': ['error', {max: 3}],
+    'max-nested-callbacks': ['error', { max: 3 }],
     'no-caller': 'error',
     'no-extend-native': 'error',
     'no-extra-bind': 'error',
@@ -55,8 +55,8 @@ module.exports = {
     'no-throw-literal': 'error', // eslint:recommended
     'no-with': 'error',
     'consistent-return': 'error',
-    curly: ['error', 'all'],
-    eqeqeq: 'error',
+    'curly': ['error', 'all'],
+    'eqeqeq': 'error',
     'no-alert': 'error',
     'no-eval': 'error',
     'no-fallthrough': 'error',
@@ -76,12 +76,12 @@ module.exports = {
     'no-script-url': 'error',
     'no-sequences': 'error',
     'no-unused-expressions': 'error',
-    radix: 'error',
+    'radix': 'error',
 
     // Variables
     // http://eslint.org/docs/rules/#variables
     // ---------------------------------------
-    'no-unused-vars': ['error', {args: 'after-used', argsIgnorePattern: '^_'}], // check that all args are used¬
+    'no-unused-vars': ['error', { args: 'after-used', argsIgnorePattern: '^_' }], // check that all args are used¬
     'no-delete-var': 'error', // eslint:recommended
     'no-label-var': 'error',
     'no-shadow': 'error',
@@ -98,7 +98,7 @@ module.exports = {
     // Stylistic Issues
     // http://eslint.org/docs/rules/#stylistic-issues
     // ----------------------------------------------
-    indent: [
+    'indent': [
       'error',
       2,
       {
@@ -106,15 +106,15 @@ module.exports = {
         // continuation indent
         VariableDeclarator: 1, // indent is multiplier * indent = 1 * 2
         MemberExpression: 2, // indent is multiplier * indent = 2 * 2
-        FunctionDeclaration: {parameters: 2},
-        FunctionExpression: {parameters: 2},
-        CallExpression: {arguments: 2},
-      },
+        FunctionDeclaration: { parameters: 2 },
+        FunctionExpression: { parameters: 2 },
+        CallExpression: { arguments: 2 },
+      }
     ],
     'block-spacing': ['error', 'always'],
     'array-bracket-spacing': ['error', 'never'],
     'brace-style': 'error',
-    camelcase: 'error',
+    'camelcase': 'error',
     'comma-spacing': 'error',
     'comma-style': 'error',
     'computed-property-spacing': 'error',
@@ -126,7 +126,7 @@ module.exports = {
     'new-cap': 'error',
     'no-array-constructor': 'error',
     'no-mixed-spaces-and-tabs': 'error', // eslint:recommended
-    'no-multiple-empty-lines': ['error', {max: 2}],
+    'no-multiple-empty-lines': ['error', { max: 2 }],
     'no-new-object': 'error',
     'no-trailing-spaces': 'error',
     'object-curly-spacing': 'error',
@@ -144,13 +144,13 @@ module.exports = {
     semi: 'error',
     'space-in-parens': ['error', 'never'],
     'space-before-blocks': 'error',
-    'space-before-function-paren': ['error', {named: 'never', anonymous: 'always'}],
+    'space-before-function-paren': ['error', { named: 'never', anonymous: 'always' }],
     'spaced-comment': ['error', 'always'],
     'unicode-bom': 'warn',
     'new-parens': 'error',
     'no-nested-ternary': 'error',
     'space-infix-ops': 'error',
-    'space-unary-ops': ['error', {words: true, nonwords: false}],
+    'space-unary-ops': ['error', { words: true, nonwords: false }],
     yoda: ['error', 'never'],
 
     'arrow-parens': ['error', 'always'],
@@ -167,7 +167,7 @@ module.exports = {
     'prefer-spread': 'error',
     'rest-spread-spacing': 'error',
     'yield-star-spacing': ['error', 'after'],
-    'object-shorthand': ['error', 'always', {avoidQuotes: true}],
+    'object-shorthand': ['error', 'always', { avoidQuotes: true }],
 
     'comma-dangle': [
       'error',
