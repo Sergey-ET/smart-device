@@ -22,6 +22,11 @@ $color-black-opacity-07: rgba(3, 16, 27, 0.7);
 // Gradient
 
 $black-to-up: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+$black-to-up-light: linear-gradient(
+  180deg,
+  rgba(25, 32, 36, 0.7) 71.72%,
+  rgba(25, 32, 36, 0) 100%
+);
 
 // Typography
 // ---------------------------------
