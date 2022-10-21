@@ -2,14 +2,24 @@
   padding-top: 30px;
   padding-bottom: 35px;
   background: $black-to-up;
+
+  @include vp-1023 {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
 }
 
 .page-header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
   max-width: 1300px;
   padding-right: 100px;
+
+  @include vp-1023 {
+    padding-right: 70px;
+  }
 }
 
 .page-header__logo-image {
@@ -26,20 +36,41 @@
   gap: 20px;
   min-width: 460px;
   padding-bottom: 5px;
+
+  @include vp-1023 {
+    min-width: 100px;
+    max-width: 450px;
+    padding-bottom: 15px;
+  }
 }
 
 .page-header__contacts-type {
   display: flex;
   align-items: center;
+
+  @include vp-1023 {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .page-header__contacts-icon {
   margin-right: 15px;
+
+  @include vp-1023 {
+    margin-right: 0;
+  }
 }
 
 .page-header__contacts-text {
   line-height: 18px;
   color: $color-alice-blue;
+
+  @include vp-1023 {
+    display: none;
+  }
 }
 
 .page-header__button {
@@ -55,4 +86,8 @@
   line-height: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
+
+  @include vp-1023 {
+    display: none;
+  }
 }
