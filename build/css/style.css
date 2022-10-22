@@ -1078,6 +1078,64 @@ button,
   .page-header__button {
     display: none;
   }
+
+  .page-footer {
+    padding-top: 50px;
+    padding-bottom: 82px;
+  }
+
+  .page-footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .page-footer__inner {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
+
+  .page-footer__logo-image {
+    margin-bottom: 0;
+  }
+
+  .page-footer__socials-list {
+    margin-left: 0;
+    margin-top: -5px;
+    margin-right: -5px;
+  }
+
+  .page-footer__socials-link:hover .page-footer__socials-icon {
+    fill: #f8fdff;
+  }
+
+  .page-footer__blocks-list {
+    width: 100%;
+    height: auto;
+  }
+
+  .page-footer__blocks-sublist {
+    height: auto;
+  }
+
+  .page-footer__blocks-item:nth-child(2) .page-footer__blocks-subitem {
+    width: 320px;
+  }
+
+  .page-footer__blocks-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+  }
 }
 
 @media (max-width: 767px) {

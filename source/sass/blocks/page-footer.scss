@@ -2,6 +2,11 @@
   padding-top: 57px;
   padding-bottom: 48px;
   background-color: $color-black-pearl;
+
+  @include vp-1023 {
+    padding-top: 50px;
+    padding-bottom: 82px;
+  }
 }
 
 .page-footer__container {
@@ -9,15 +14,32 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
+
+  @include vp-1023 {
+    flex-direction: column;
+  }
 }
 
 .page-footer__inner {
   width: 215px;
   margin-top: -7px;
+
+  @include vp-1023 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
 }
 
 .page-footer__logo-image {
   margin-bottom: 30px;
+
+  @include vp-1023 {
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__socials-list {
@@ -29,6 +51,12 @@
   margin-left: 10px;
   padding: 0;
   list-style: none;
+
+  @include vp-1023 {
+    margin-left: 0;
+    margin-top: -5px;
+    margin-right: -5px;
+  }
 }
 
 .page-footer__socials-link {
@@ -41,6 +69,10 @@
 
 .page-footer__socials-link:hover .page-footer__socials-icon {
   fill: $color-deep-sky-blue;
+
+  @include vp-1023 {
+    fill: $color-alice-blue-light;
+  }
 }
 
 .page-footer__socials-icon {
@@ -56,6 +88,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @include vp-1023 {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .page-footer__blocks-title {
@@ -80,10 +117,18 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @include vp-1023 {
+    height: auto;
+  }
 }
 
 .page-footer__blocks-item:nth-child(2) .page-footer__blocks-subitem {
   width: 345px;
+
+  @include vp-1023 {
+    width: 320px;
+  }
 }
 
 .page-footer__blocks-subitem {
@@ -100,5 +145,11 @@
 
   &:hover {
     color: $color-deep-sky-blue;
+  }
+
+  @include vp-1023 {
+    &:hover {
+      color: $color-white-opacity-07;
+    }
   }
 }
