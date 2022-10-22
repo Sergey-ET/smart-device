@@ -831,6 +831,10 @@ button,
   align-items: center;
 }
 
+.page-header__contacts-type:hover .page-header__contacts-text {
+  color: #00b2ff;
+}
+
 .page-header__contacts-icon {
   margin-right: 15px;
 }
@@ -914,6 +918,14 @@ button,
   height: 40px;
 }
 
+.page-footer__socials-link:hover .page-footer__socials-icon {
+  fill: #00b2ff;
+}
+
+.page-footer__socials-icon {
+  fill: #f8fdff;
+}
+
 .page-footer__blocks-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -977,6 +989,10 @@ button,
 
 .page-footer__blocks-link {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.page-footer__blocks-link:hover {
+  color: #00b2ff;
 }
 
 /* @mixin hover-focus {

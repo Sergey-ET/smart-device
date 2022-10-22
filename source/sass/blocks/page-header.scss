@@ -80,6 +80,10 @@
   }
 }
 
+.page-header__contacts-type:hover .page-header__contacts-text {
+  color: $color-deep-sky-blue;
+}
+
 .page-header__contacts-icon {
   margin-right: 15px;
 
