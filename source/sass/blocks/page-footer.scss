@@ -98,7 +98,7 @@
   fill: $color-alice-blue-light;
 }
 
-.page-footer__blocks-list {
+.page-footer__menu-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -118,10 +118,9 @@
   }
 }
 
-.page-footer__blocks-item {
+.page-footer__menu-item {
   @include vp-767 {
     position: relative;
-    // padding-bottom: 20px;
 
     &::before {
       content: "";
@@ -145,7 +144,7 @@
   }
 }
 
-.page-footer__blocks-title {
+.page-footer__menu-title {
   margin: 0;
   margin-bottom: 23px;
   font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
@@ -165,7 +164,7 @@
   }
 }
 
-.page-footer__blocks-sublist {
+.page-footer__menu-sublist {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -180,7 +179,7 @@
   }
 }
 
-.page-footer__blocks-item:nth-child(2) .page-footer__blocks-subitem {
+.page-footer__menu-item:nth-child(2) .page-footer__menu-subitem {
   width: 345px;
 
   @include vp-1023 {
@@ -192,13 +191,13 @@
   }
 }
 
-.page-footer__blocks-item:nth-child(2) .page-footer__blocks-subitem:first-child {
+.page-footer__menu-item:nth-child(2) .page-footer__menu-subitem:first-child {
   @include vp-767 {
     margin-bottom: 15px;
   }
 }
 
-.page-footer__blocks-subitem {
+.page-footer__menu-subitem {
   margin-bottom: 7px;
   width: 220px;
 
@@ -215,7 +214,7 @@
   }
 }
 
-.page-footer__blocks-link {
+.page-footer__menu-link {
   color: $color-white-opacity-07;
 
   &:hover {
@@ -235,19 +234,29 @@
 }
 
 @include vp-767 {
-  .is-closed .page-footer__blocks-subitem {
+  .is-closed .page-footer__menu-subitem {
     display: none;
   }
 
-  .page-footer__blocks-item--nojs .page-footer__blocks-subitem {
+  .page-footer__menu-item--nojs .page-footer__menu-subitem {
     display: block;
   }
 
-  .is-closed .page-footer__blocks-title {
+  .is-closed .page-footer__menu-title {
     padding-bottom: 20px;
+    background-image: url("../img/svg/plus.svg");
+    background-repeat: no-repeat;
+    background-position: right;
   }
 
-  .is-open .page-footer__blocks-title {
+  .is-open .page-footer__menu-title {
     padding-bottom: 15px;
+    background-image: url("../img/svg/minus.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .page-footer__menu-item--nojs .page-footer__menu-title {
+    background-image: none;
   }
 }
