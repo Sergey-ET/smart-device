@@ -7,6 +7,11 @@
     padding-top: 50px;
     padding-bottom: 82px;
   }
+
+  @include vp-767 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
 }
 
 .page-footer__container {
@@ -17,6 +22,10 @@
 
   @include vp-1023 {
     flex-direction: column;
+  }
+
+  @include vp-767 {
+    gap: 0;
   }
 }
 
@@ -32,6 +41,11 @@
     margin-top: 0;
     margin-bottom: 18px;
   }
+
+  @include vp-767 {
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
 }
 
 .page-footer__logo-image {
@@ -39,6 +53,11 @@
 
   @include vp-1023 {
     margin-bottom: 0;
+  }
+
+  @include vp-767 {
+    margin-right: 5px;
+    margin-bottom: 20px;
   }
 }
 
@@ -93,6 +112,37 @@
     width: 100%;
     height: auto;
   }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.page-footer__blocks-item {
+  @include vp-767 {
+    position: relative;
+    // padding-bottom: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -25px;
+      right: -25px;
+      border-top: 1px solid $color-alice-blue-light-opacity-07;
+    }
+
+    &:last-child {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -25px;
+        right: -25px;
+        border-bottom: 1px solid $color-alice-blue-light-opacity-07;
+      }
+    }
+  }
 }
 
 .page-footer__blocks-title {
@@ -105,7 +155,14 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $color-default-white;
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
+
+  @include vp-767 {
+    padding-top: 23px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
 }
 
 .page-footer__blocks-sublist {
@@ -129,6 +186,16 @@
   @include vp-1023 {
     width: 320px;
   }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.page-footer__blocks-item:nth-child(2) .page-footer__blocks-subitem:first-child {
+  @include vp-767 {
+    margin-bottom: 15px;
+  }
 }
 
 .page-footer__blocks-subitem {
@@ -137,6 +204,14 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @include vp-767 {
+    width: 100%;
+
+    &:last-child {
+      margin-bottom: 19px;
+    }
   }
 }
 
@@ -151,5 +226,28 @@
     &:hover {
       color: $color-white-opacity-07;
     }
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@include vp-767 {
+  .is-closed .page-footer__blocks-subitem {
+    display: none;
+  }
+
+  .page-footer__blocks-item--nojs .page-footer__blocks-subitem {
+    display: block;
+  }
+
+  .is-closed .page-footer__blocks-title {
+    padding-bottom: 20px;
+  }
+
+  .is-open .page-footer__blocks-title {
+    padding-bottom: 15px;
   }
 }

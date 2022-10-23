@@ -855,7 +855,7 @@ button,
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
@@ -952,7 +952,7 @@ button,
   line-height: 16px;
   text-transform: uppercase;
   color: #ffffff;
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
 }
 
 .page-footer__blocks-sublist {
@@ -1177,6 +1177,101 @@ button,
   .page-header__contacts {
     max-width: 200px;
     padding-bottom: 0;
+  }
+
+  .page-footer {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .page-footer__container {
+    gap: 0;
+  }
+
+  .page-footer__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  .page-footer__logo-image {
+    margin-right: 5px;
+    margin-bottom: 20px;
+  }
+
+  .page-footer__blocks-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .page-footer__blocks-item {
+    position: relative;
+  }
+
+  .page-footer__blocks-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25px;
+    right: -25px;
+    border-top: 1px solid rgba(248, 253, 255, 0.7);
+  }
+
+  .page-footer__blocks-item:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+    right: -25px;
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  }
+
+  .page-footer__blocks-title {
+    padding-top: 23px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+
+  .page-footer__blocks-item:nth-child(2) .page-footer__blocks-subitem {
+    width: 100%;
+  }
+
+  .page-footer__blocks-item:nth-child(2) .page-footer__blocks-subitem:first-child {
+    margin-bottom: 15px;
+  }
+
+  .page-footer__blocks-subitem {
+    width: 100%;
+  }
+
+  .page-footer__blocks-subitem:last-child {
+    margin-bottom: 19px;
+  }
+
+  .page-footer__blocks-link {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .is-closed .page-footer__blocks-subitem {
+    display: none;
+  }
+
+  .page-footer__blocks-item--nojs .page-footer__blocks-subitem {
+    display: block;
+  }
+
+  .is-closed .page-footer__blocks-title {
+    padding-bottom: 20px;
+  }
+
+  .is-open .page-footer__blocks-title {
+    padding-bottom: 15px;
   }
 }
 
