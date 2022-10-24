@@ -1193,6 +1193,26 @@ button,
   .page-footer__menu-link:hover {
     color: rgba(255, 255, 255, 0.7);
   }
+
+  .major {
+    height: 640px;
+    padding-top: 200px;
+    padding-bottom: 205px;
+  }
+
+  .major h1 {
+    margin-bottom: 0;
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  .major p {
+    margin-bottom: 56px;
+  }
+
+  .major__button {
+    margin-left: 45px;
+  }
 }
 
 @media (max-width: 767px) {
