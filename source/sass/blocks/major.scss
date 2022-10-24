@@ -12,8 +12,6 @@
 
   @media (min-resolution: $retina-dppx) {
     background-image: $black-to-up-light, url("../img/background-image@2x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   @include vp-1023 {
