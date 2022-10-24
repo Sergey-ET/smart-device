@@ -4,23 +4,30 @@
   padding-top: 305px;
   padding-bottom: 280px;
   width: 100%;
-  height: 880px;
-  background: $black-to-up-light, url("../img/background-image.jpg");
+  min-height: 880px;
+  background-image: $black-to-up-light, url("../img/background-image.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
 
   @media (min-resolution: $retina-dppx) {
-    background: $black-to-up-light, url("../img/background-image@2x.jpg");
+    background-image: $black-to-up-light, url("../img/background-image@2x.jpg");
     background-repeat: no-repeat;
-    background-position: 0 0;
     background-size: cover;
   }
 
   @include vp-1023 {
-    height: 640px;
+    min-height: 660px;
     padding-top: 200px;
     padding-bottom: 205px;
+    background-position: 21% 10px;
+  }
+
+  @include vp-767 {
+    min-height: 610px;
+    padding-top: 200px;
+    padding-bottom: 190px;
+    background-position: 26% 17px;
   }
 }
 
@@ -44,6 +51,12 @@
     font-size: 64px;
     line-height: 75px;
   }
+
+  @include vp-767 {
+    margin-bottom: 8px;
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .major p {
@@ -56,9 +69,16 @@
   @include vp-1023 {
     margin-bottom: 56px;
   }
+
+  @include vp-767 {
+    margin-bottom: 45px;
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .major__button {
+  max-width: 411px;
   padding: 17px 27px;
   font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   font-style: normal;
@@ -75,5 +95,34 @@
 
   @include vp-1023 {
     margin-left: 45px;
+  }
+
+  @include vp-767 {
+    padding: 11px 37px;
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.major__button-text {
+  &--small {
+    display: none;
+
+    @include vp-767 {
+      display: block;
+    }
+  }
+
+  &--big {
+    @include vp-767 {
+      display: none;
+    }
+  }
+}
+
+.br {
+  @include vp-767 {
+    display: none;
   }
 }

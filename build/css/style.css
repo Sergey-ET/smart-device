@@ -1003,10 +1003,10 @@ button,
   padding-top: 305px;
   padding-bottom: 280px;
   width: 100%;
-  height: 880px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background-image.jpg");
-  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-image.jpg");
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-image.jpg");
+  min-height: 880px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background-image.jpg");
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-image.jpg");
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-image.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -1037,6 +1037,7 @@ button,
 }
 
 .major__button {
+  max-width: 411px;
   padding: 17px 27px;
   font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   font-style: normal;
@@ -1050,6 +1051,10 @@ button,
   border: none;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.major__button-text--small {
+  display: none;
 }
 
 /* @mixin hover-focus {
@@ -1195,9 +1200,10 @@ button,
   }
 
   .major {
-    height: 640px;
+    min-height: 660px;
     padding-top: 200px;
     padding-bottom: 205px;
+    background-position: 21% 10px;
   }
 
   .major h1 {
@@ -1360,6 +1366,44 @@ button,
   .page-footer__menu-item--nojs .page-footer__menu-title {
     background-image: none;
   }
+
+  .major {
+    min-height: 610px;
+    padding-top: 200px;
+    padding-bottom: 190px;
+    background-position: 26% 17px;
+  }
+
+  .major h1 {
+    margin-bottom: 8px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .major p {
+    margin-bottom: 45px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .major__button {
+    padding: 11px 37px;
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .major__button-text--small {
+    display: block;
+  }
+
+  .major__button-text--big {
+    display: none;
+  }
+
+  .br {
+    display: none;
+  }
 }
 
 @media (hover: hover) {
@@ -1370,11 +1414,10 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
   .major {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background-image@2x.jpg");
-    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-image@2x.jpg");
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-image@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background-image@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-image@2x.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-image@2x.jpg");
     background-repeat: no-repeat;
-    background-position: 0 0;
     background-size: cover;
   }
 }
