@@ -7,6 +7,11 @@
     padding-top: 56px;
     padding-bottom: 75px;
   }
+
+  @include vp-767 {
+    padding-top: 47px;
+    padding-bottom: 86px;
+  }
 }
 
 .products__text {
@@ -25,6 +30,20 @@
 
   @include vp-1023 {
     margin-bottom: 37px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 29px;
+    font-size: 28px;
+    line-height: 39px;
+
+    &--short {
+      display: block;
+    }
+
+    &--long {
+      display: none;
+    }
   }
 }
 
@@ -66,6 +85,16 @@
         }
       }
     }
+
+    @include vp-767 {
+      &:first-child {
+        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-mobile.jpg");
+
+        @include retina {
+          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-mobile@2x.jpg");
+        }
+      }
+    }
   }
 
   &:nth-child(2n) {
@@ -84,6 +113,16 @@
         }
       }
     }
+
+    @include vp-767 {
+      &:nth-child(2n) {
+        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-mobile.jpg");
+
+        @include retina {
+          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-mobile@2x.jpg");
+        }
+      }
+    }
   }
 
   &:last-child {
@@ -99,6 +138,16 @@
 
         @include retina {
           background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-tablet@2x.jpg");
+        }
+      }
+    }
+
+    @include vp-767 {
+      &:last-child {
+        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-mobile.jpg");
+
+        @include retina {
+          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-mobile@2x.jpg");
         }
       }
     }
@@ -132,6 +181,21 @@
     width: 100%;
     height: auto;
   }
+
+  @include vp-767 {
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      right: 16px;
+      bottom: 17px;
+      width: 5px;
+      height: 6px;
+      background-image: url("../img/svg/arrow-small.svg");
+    }
+  }
 }
 
 .products__item h3 {
@@ -147,6 +211,11 @@
   @include vp-1023 {
     width: 150px;
   }
+
+  @include vp-767 {
+    font-size: 18px;
+    width: 135px;
+  }
 }
 
 .products__link {
@@ -159,5 +228,11 @@
     min-width: 670px;
     min-height: 250px;
     padding: 37px 45px 60px 45px;
+  }
+
+  @include vp-767 {
+    min-width: 270px;
+    min-height: 250;
+    padding: 26px 30px 40px 30px;
   }
 }

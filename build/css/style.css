@@ -1863,12 +1863,93 @@ button,
     padding-bottom: 10px;
   }
 
-  .is-closed {
+  .is-locked {
     display: none;
   }
 
   .about__text--nojs {
     display: block;
+  }
+
+  .products {
+    padding-top: 47px;
+    padding-bottom: 86px;
+  }
+
+  .products__text {
+    margin-bottom: 29px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .products__text--short {
+    display: block;
+  }
+
+  .products__text--long {
+    display: none;
+  }
+
+  .products__item:first-child:first-child {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/production-mobile.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/production-mobile.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/production-mobile.jpg");
+  }
+
+  .products__item:nth-child(2n):nth-child(2n) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/assembling-mobile.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling-mobile.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling-mobile.jpg");
+  }
+
+  .products__item:last-child:last-child {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/components-mobile.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-mobile.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-mobile.jpg");
+  }
+
+  .products__item::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .products__item::after {
+    right: 16px;
+    bottom: 17px;
+    width: 5px;
+    height: 6px;
+    background-image: url("../img/svg/arrow-small.svg");
+  }
+
+  .products__item h3 {
+    font-size: 18px;
+    width: 135px;
+  }
+
+  .products__link {
+    min-width: 270px;
+    min-height: 250;
+    padding: 26px 30px 40px 30px;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .products__item:first-child:first-child {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/production-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/production-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/production-mobile@2x.jpg");
+  }
+
+  .products__item:nth-child(2n):nth-child(2n) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/assembling-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling-mobile@2x.jpg");
+  }
+
+  .products__item:last-child:last-child {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/components-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-mobile@2x.jpg");
   }
 }
 

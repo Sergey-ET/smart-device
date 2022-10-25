@@ -10,7 +10,7 @@ const showMore = () => {
   aboutText.classList.remove('about__text--nojs');
 
   buttonMore.addEventListener('click', () => {
-    aboutText.classList.toggle('is-closed');
+    aboutText.classList.toggle('is-locked');
     additionalTexts.forEach((additionalText) => {
       if (additionalText.classList.contains('is-hidden')) {
         additionalText.classList.remove('is-hidden');
