@@ -1147,6 +1147,74 @@ button,
   color: #f2f5f7;
 }
 
+.about {
+  padding-top: 60px;
+  padding-bottom: 119px;
+}
+
+.about__container {
+  position: relative;
+  padding-left: 290px;
+}
+
+.about__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 40px;
+  bottom: 0;
+  width: 150px;
+  height: 320px;
+  background-image: url("../img/year.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.about h2 {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.about p:last-of-type {
+  margin-bottom: 0;
+}
+
+.about__button {
+  display: block;
+  max-width: 180px;
+  margin-top: 40px;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.about__button--nojs {
+  display: none;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.additional--nojs {
+  display: block;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1583,5 +1651,9 @@ button,
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background-image@2x.jpg");
     background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-image@2x.jpg");
     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-image@2x.jpg");
+  }
+
+  .about__container::before {
+    background-image: url("../img/year@2x.png");
   }
 }

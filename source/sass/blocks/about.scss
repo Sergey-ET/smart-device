@@ -1,0 +1,71 @@
+.about {
+  padding-top: 60px;
+  padding-bottom: 119px;
+}
+
+.about__container {
+  position: relative;
+  padding-left: 290px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 40px;
+    bottom: 0;
+    width: 150px;
+    height: 320px;
+    background-image: url("../img/year.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/year@2x.png");
+    }
+  }
+}
+
+.about h2 {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about p {
+  margin: 0;
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.about__button {
+  display: block;
+  max-width: 180px;
+  margin-top: 40px;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  &--nojs {
+    display: none;
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+.additional--nojs {
+  display: block;
+}

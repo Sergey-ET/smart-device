@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {createAccordion} from './modules/accordion';
 import {scrollToElement} from './modules/scroll';
+import {showMore} from './modules/show-more';
 
 // ---------------------------------
 
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     createAccordion();
+    showMore();
   });
 });
 
