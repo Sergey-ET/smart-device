@@ -1,6 +1,11 @@
 .about {
   padding-top: 60px;
   padding-bottom: 119px;
+
+  @include vp-1023 {
+    padding-top: 0;
+    padding-bottom: 79px;
+  }
 }
 
 .about__container {
@@ -24,6 +29,15 @@
       background-image: url("../img/year@2x.png");
     }
   }
+
+  @include vp-1023 {
+    padding-left: 225px;
+
+    &::before {
+      top: 5px;
+      left: 46px;
+    }
+  }
 }
 
 .about h2 {
@@ -43,6 +57,12 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+
+  @include vp-1023 {
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .about__button {
@@ -59,6 +79,10 @@
 
   &--nojs {
     display: none;
+  }
+
+  @include vp-1023 {
+    margin-top: -5px;
   }
 }
 

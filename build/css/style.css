@@ -1381,7 +1381,7 @@ button,
   .features {
     position: relative;
     top: -40px;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
   }
 
   .features__item {
@@ -1406,6 +1406,28 @@ button,
 
   .features h3 {
     margin-bottom: 9px;
+  }
+
+  .about {
+    padding-top: 0;
+    padding-bottom: 79px;
+  }
+
+  .about__container {
+    padding-left: 225px;
+  }
+
+  .about__container::before {
+    top: 5px;
+    left: 46px;
+  }
+
+  .about p:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  .about__button {
+    margin-top: -5px;
   }
 }
 
