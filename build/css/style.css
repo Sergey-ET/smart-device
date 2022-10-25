@@ -1010,6 +1010,7 @@ button,
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
+  background-color: #041827;
 }
 
 .major__container {
@@ -1213,6 +1214,120 @@ button,
 
 .additional--nojs {
   display: inline-block;
+}
+
+.products {
+  padding-top: 66px;
+  padding-bottom: 140px;
+  background-color: #041827;
+}
+
+.products__text {
+  display: block;
+  margin-bottom: 53px;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.products__text--short {
+  display: none;
+}
+
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 85px;
+}
+
+.products__item {
+  position: relative;
+  background-color: rgba(3, 16, 27, 0.7);
+}
+
+.products__item:first-child {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/production.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/production.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/production.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.products__item:nth-child(2n) {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/assembling.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.products__item:last-child {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/components.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.products__item::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 0;
+  bottom: 0;
+  background-color: #00b2ff;
+  border-radius: 3px 0 0 0;
+  cursor: pointer;
+}
+
+.products__item::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  right: 30px;
+  bottom: 30px;
+  -webkit-transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
+  background-image: url("../img/svg/arrow.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.products__item h3 {
+  margin: 0;
+  width: 170px;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.products__link {
+  display: block;
+  padding: 47px 80px 60px 40px;
+  width: 350px;
+  min-height: 650px;
 }
 
 /* @mixin hover-focus {
@@ -1712,5 +1827,23 @@ button,
 
   .about__container::before {
     background-image: url("../img/year@2x.png");
+  }
+
+  .products__item:first-child {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/production@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/production@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/production@2x.jpg");
+  }
+
+  .products__item:nth-child(2n) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/assembling@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling@2x.jpg");
+  }
+
+  .products__item:last-child {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/components@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components@2x.jpg");
   }
 }

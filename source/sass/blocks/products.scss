@@ -1,0 +1,111 @@
+.products {
+  padding-top: 66px;
+  padding-bottom: 140px;
+  background-color: $color-black-pearl;
+}
+
+.products__text {
+  display: block;
+  margin-bottom: 53px;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-default-white;
+
+  &--short {
+    display: none;
+  }
+}
+
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 85px;
+}
+
+.products__item {
+  position: relative;
+  background-color: $color-black-opacity-07;
+
+  &:first-child {
+    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production.jpg");
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production@2x.jpg");
+    }
+  }
+
+  &:nth-child(2n) {
+    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling.jpg");
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling@2x.jpg");
+    }
+  }
+
+  &:last-child {
+    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components.jpg");
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components@2x.jpg");
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 0;
+    bottom: 0;
+    background-color: $color-deep-sky-blue;
+    border-radius: 3px 0 0 0;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    right: 30px;
+    bottom: 30px;
+    transform: translate(50%, 50%);
+    background-image: url("../img/svg/arrow.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+}
+
+.products__item h3 {
+  margin: 0;
+  width: 170px;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-default-white;
+}
+
+.products__link {
+  display: block;
+  padding: 47px 80px 60px 40px;
+  width: 350px;
+  min-height: 650px;
+}

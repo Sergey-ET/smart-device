@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
+  background-color: $color-black-pearl;
 
   @include retina {
     background-image: $black-to-up-light, url("../img/background-image@2x.jpg");
