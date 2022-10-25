@@ -6,6 +6,12 @@
     padding-top: 0;
     padding-bottom: 79px;
   }
+
+  @include vp-767 {
+    position: relative;
+    top: -49px;
+    padding-bottom: 30px;
+  }
 }
 
 .about__container {
@@ -25,7 +31,7 @@
     background-position: 0 0;
     background-size: cover;
 
-    @media (min-resolution: $retina-dppx) {
+    @include retina {
       background-image: url("../img/year@2x.png");
     }
   }
@@ -38,6 +44,12 @@
       left: 46px;
     }
   }
+
+  @include vp-767 {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .about h2 {
@@ -48,6 +60,11 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 39px;
+  }
 }
 
 .about p {
@@ -62,6 +79,11 @@
     &:last-of-type {
       margin-bottom: 20px;
     }
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
   }
 }
 
@@ -84,6 +106,13 @@
   @include vp-1023 {
     margin-top: -5px;
   }
+
+  @include vp-767 {
+    max-width: 160px;
+    margin-top: -6px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+  }
 }
 
 .is-hidden {
@@ -91,5 +120,17 @@
 }
 
 .additional--nojs {
-  display: block;
+  display: inline-block;
+}
+
+.is-closed {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about__text--nojs {
+  @include vp-767 {
+    display: block;
+  }
 }

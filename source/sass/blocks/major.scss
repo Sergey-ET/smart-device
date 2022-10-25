@@ -10,7 +10,7 @@
   background-position: 0 0;
   background-size: cover;
 
-  @media (min-resolution: $retina-dppx) {
+  @include retina {
     background-image: $black-to-up-light, url("../img/background-image@2x.jpg");
   }
 
