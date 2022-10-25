@@ -2,6 +2,11 @@
   padding-top: 66px;
   padding-bottom: 140px;
   background-color: $color-black-pearl;
+
+  @include vp-1023 {
+    padding-top: 56px;
+    padding-bottom: 75px;
+  }
 }
 
 .products__text {
@@ -17,6 +22,10 @@
   &--short {
     display: none;
   }
+
+  @include vp-1023 {
+    margin-bottom: 37px;
+  }
 }
 
 .products__list {
@@ -25,44 +34,73 @@
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 85px;
+
+  @include vp-1023 {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .products__item {
   position: relative;
   background-color: $color-black-opacity-07;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 
   &:first-child {
-    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production.jpg");
-    background-size: cover;
-    background-position: 0 0;
-    background-repeat: no-repeat;
+    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-desktop.jpg");
 
     @include retina {
-      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production@2x.jpg");
+      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-desktop@2x.jpg");
+    }
+
+    @include vp-1023 {
+      &:first-child {
+        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-tablet.jpg");
+
+        @include retina {
+          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-tablet@2x.jpg");
+        }
+      }
     }
   }
 
   &:nth-child(2n) {
-    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling.jpg");
-    background-size: cover;
-    background-position: 0 0;
-    background-repeat: no-repeat;
+    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-desktop.jpg");
 
     @include retina {
-      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling@2x.jpg");
+      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-desktop@2x.jpg");
+    }
+
+    @include vp-1023 {
+      &:nth-child(2n) {
+        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-tablet.jpg");
+
+        @include retina {
+          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-tablet@2x.jpg");
+        }
+      }
     }
   }
 
   &:last-child {
-    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components.jpg");
-    background-size: cover;
-    background-position: 0 0;
-    background-repeat: no-repeat;
+    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-desktop.jpg");
 
     @include retina {
-      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components@2x.jpg");
+      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-desktop@2x.jpg");
+    }
+
+    @include vp-1023 {
+      &:last-child {
+        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-tablet.jpg");
+
+        @include retina {
+          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-tablet@2x.jpg");
+        }
+      }
     }
   }
 
@@ -83,12 +121,16 @@
     position: absolute;
     width: 5px;
     height: 10px;
-    right: 30px;
-    bottom: 30px;
-    transform: translate(50%, 50%);
+    right: 26px;
+    bottom: 25px;
     background-image: url("../img/svg/arrow.svg");
     background-repeat: no-repeat;
     cursor: pointer;
+  }
+
+  @include vp-1023 {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -101,11 +143,21 @@
   font-size: 20px;
   line-height: 30px;
   color: $color-default-white;
+
+  @include vp-1023 {
+    width: 150px;
+  }
 }
 
 .products__link {
   display: block;
   padding: 47px 80px 60px 40px;
-  width: 350px;
+  min-width: 350px;
   min-height: 650px;
+
+  @include vp-1023 {
+    min-width: 670px;
+    min-height: 250px;
+    padding: 37px 45px 60px 45px;
+  }
 }
