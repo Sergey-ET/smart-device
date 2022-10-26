@@ -1,29 +1,28 @@
 .feedback {
-  padding-top: 170px;
+  padding-top: 166px;
   padding-bottom: 250px;
   background-color: $color-deep-sky-blue;
-  background-image: linear-gradient(-53.1deg, $color-deep-sky-blue 75%, $color-blue-opacity-05 75%);
+  background-image: linear-gradient(-40.8deg, $color-deep-sky-blue 66.4%, $color-blue-opacity-05 66.4%);
 
   @include vp-1023 {
-    padding-top: 50px;
+    padding-top: 46px;
     padding-bottom: 125px;
     background-image: none;
   }
 
   @include vp-767 {
-    padding-bottom: 90px;
+    padding-bottom: 85px;
   }
 }
 
 .feedback__container {
   position: relative;
-  padding-left: 630px;
 
   &::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 20%;
+    left: 40px;
+    top: 80px;
     width: 510px;
     height: 285px;
     background-image: url("../img/paper-airplane.png");
@@ -45,20 +44,24 @@
 
 .feedback__slogan {
   display: block;
-  margin-bottom: 15px;
+  margin-right: 51px;
+  margin-bottom: 11px;
   font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
+  text-align: right;
   color: $color-default-white;
 
   @include vp-1023 {
-    margin-bottom: 10px;
+    margin-right: 0;
+    margin-bottom: 6px;
+    text-align: left;
   }
 
   @include vp-767 {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     font-size: 30px;
     line-height: 42px;
   }
@@ -66,27 +69,36 @@
 
 .feedback__text {
   display: block;
-  margin-bottom: 35px;
+  margin-right: 273px;
+  margin-bottom: 36px;
   color: $color-default-white;
+  text-align: right;
 
   @include vp-1023 {
-    margin-bottom: 25px;
+    margin-right: 0;
+    margin-bottom: 26px;
+    text-align: left;
   }
 
   @include vp-767 {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     font-size: 14px;
     line-height: 19px;
   }
 }
 
 .feedback form {
+  position: relative;
   padding: 0;
   margin: 0;
+  margin-right: 10px;
   width: 580px;
+  margin-left: auto;
+  z-index: 1;
 
   @include vp-1023 {
     width: 670px;
+    margin-left: 0;
   }
 
   @include vp-767 {
@@ -124,15 +136,15 @@
 
   @include vp-767 {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 }
 
 .feedback textarea {
   width: 580px;
-  height: 175px;
+  height: 156px;
   padding: 25px 15px 15px;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
   color: $color-default-white;
   background: $color-blue-opacity-015;
   border: none;
@@ -149,7 +161,8 @@
 
   @include vp-767 {
     width: 100%;
-    margin-bottom: 30px;
+    height: 180px;
+    margin-bottom: 24px;
     padding-top: 25px;
   }
 }
@@ -167,6 +180,7 @@
 
 .form__button {
   display: block;
+  padding-bottom: 11px;
   width: 265px;
   font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   font-style: normal;
@@ -187,7 +201,8 @@
 .feedback label[for="personal-data"] {
   position: relative;
   display: block;
-  width: 260px;
+  width: 265px;
+  margin-bottom: -2px;
   padding-left: 26px;
   font-weight: 400;
   font-size: 14px;
@@ -197,11 +212,12 @@
   cursor: pointer;
 
   @include vp-1023 {
-    margin-right: 60px;
+    margin-right: 55px;
+    margin-bottom: 3px;
   }
 
   @include vp-767 {
-    margin-right: 0;
+    margin-left: 5px;
     margin-right: auto;
   }
 }
