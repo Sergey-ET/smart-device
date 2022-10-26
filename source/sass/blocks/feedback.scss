@@ -1,0 +1,155 @@
+.feedback {
+  padding-top: 170px;
+  padding-bottom: 250px;
+  background-color: $color-deep-sky-blue;
+  background-image: linear-gradient(-53.1deg, $color-deep-sky-blue 75%, $color-blue-opacity-05 75%);
+}
+
+.feedback__container {
+  position: relative;
+  padding-left: 630px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 510px;
+    height: 285px;
+    background-image: url("../img/paper-airplane.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background-image: url("../img/paper-airplane@2x.png");
+    }
+  }
+}
+
+.feedback__slogan {
+  display: block;
+  margin-bottom: 15px;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-default-white;
+}
+
+.feedback__text {
+  display: block;
+  margin-bottom: 35px;
+  color: $color-default-white;
+}
+
+.feedback form {
+  padding: 0;
+  margin: 0;
+  width: 580px;
+}
+
+.form__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.feedback input {
+  width: 275px;
+  padding: 15px;
+  color: $color-default-white;
+  background: $color-blue-opacity-015;
+  border: none;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: $color-default-white;
+  }
+}
+
+.feedback textarea {
+  width: 580px;
+  height: 175px;
+  padding: 25px 15px 15px;
+  margin-bottom: 35px;
+  color: $color-default-white;
+  background: $color-blue-opacity-015;
+  border: none;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: $color-default-white;
+  }
+}
+
+.form__wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.form__button {
+  display: block;
+  width: 265px;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+}
+
+.feedback label[for="personal-data"] {
+  position: relative;
+  display: block;
+  width: 260px;
+  padding-left: 26px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.feedback input[name="agree"] {
+  position: absolute;
+  top: 30px;
+  left: 320px;
+}
+
+.feedback input[name="agree"]+label[for="personal-data"]::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+}
+
+.feedback input[name="agree"]:checked+label[for="personal-data"]::before {
+  background-image: url("../img/svg/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.feedback input[name="agree"]:disabled+label[for="personal-data"] {
+  color: $color-blue-opacity-015;
+}
+
+.feedback input[name="agree"]:disabled+label[for="personal-data"]::before {
+  border-color: $color-blue-opacity-015;
+}
+
+.feedback input[name="agree"]:checked:disabled+label[for="personal-data"]::before {
+  opacity: 0.4;
+}

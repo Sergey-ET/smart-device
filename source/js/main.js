@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {createAccordion} from './modules/accordion';
 import {scrollToElement} from './modules/scroll';
 import {showMore} from './modules/show-more';
+import {validatePhone} from './modules/validation';
 
 // ---------------------------------
 
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     createAccordion();
     showMore();
+    validatePhone();
   });
 });
 

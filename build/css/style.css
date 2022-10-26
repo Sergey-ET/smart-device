@@ -1320,6 +1320,203 @@ button,
   min-height: 650px;
 }
 
+.feedback {
+  padding-top: 170px;
+  padding-bottom: 250px;
+  background-color: #00b2ff;
+  background-image: -o-linear-gradient(143.1deg, #00b2ff 75%, rgba(4, 24, 39, 0.5) 75%);
+  background-image: linear-gradient(-53.1deg, #00b2ff 75%, rgba(4, 24, 39, 0.5) 75%);
+}
+
+.feedback__container {
+  position: relative;
+  padding-left: 630px;
+}
+
+.feedback__container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 510px;
+  height: 285px;
+  background-image: url("../img/paper-airplane.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback__slogan {
+  display: block;
+  margin-bottom: 15px;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.feedback__text {
+  display: block;
+  margin-bottom: 35px;
+  color: #ffffff;
+}
+
+.feedback form {
+  padding: 0;
+  margin: 0;
+  width: 580px;
+}
+
+.form__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.feedback input {
+  width: 275px;
+  padding: 15px;
+  color: #ffffff;
+  background: rgba(4, 20, 39, 0.15);
+  border: none;
+  border-radius: 3px;
+}
+
+.feedback input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.feedback input::-moz-placeholder {
+  color: #ffffff;
+}
+
+.feedback input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.feedback input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.feedback input::placeholder {
+  color: #ffffff;
+}
+
+.feedback textarea {
+  width: 580px;
+  height: 175px;
+  padding: 25px 15px 15px;
+  margin-bottom: 35px;
+  color: #ffffff;
+  background: rgba(4, 20, 39, 0.15);
+  border: none;
+  border-radius: 3px;
+}
+
+.feedback textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.feedback textarea::-moz-placeholder {
+  color: #ffffff;
+}
+
+.feedback textarea:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.feedback textarea::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.feedback textarea::placeholder {
+  color: #ffffff;
+}
+
+.form__wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.form__button {
+  display: block;
+  width: 265px;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+}
+
+.feedback label[for=personal-data] {
+  position: relative;
+  display: block;
+  width: 260px;
+  padding-left: 26px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.feedback input[name=agree] {
+  position: absolute;
+  top: 30px;
+  left: 320px;
+}
+
+.feedback input[name=agree] + label[for=personal-data]::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+.feedback input[name=agree]:checked + label[for=personal-data]::before {
+  background-image: url("../img/svg/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.feedback input[name=agree]:disabled + label[for=personal-data] {
+  color: rgba(4, 20, 39, 0.15);
+}
+
+.feedback input[name=agree]:disabled + label[for=personal-data]::before {
+  border-color: rgba(4, 20, 39, 0.15);
+}
+
+.feedback input[name=agree]:checked:disabled + label[for=personal-data]::before {
+  opacity: 0.4;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1986,5 +2183,9 @@ button,
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/components-desktop@2x.jpg");
     background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-desktop@2x.jpg");
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-desktop@2x.jpg");
+  }
+
+  .feedback__container::before {
+    background-image: url("../img/paper-airplane@2x.png");
   }
 }
