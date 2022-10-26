@@ -1484,7 +1484,7 @@ button,
 
 .feedback input[name=agree] {
   position: absolute;
-  top: 30px;
+  top: 35px;
   left: 320px;
 }
 
@@ -1780,6 +1780,44 @@ button,
     min-width: 670px;
     min-height: 250px;
     padding: 37px 45px 60px 45px;
+  }
+
+  .feedback {
+    padding-top: 50px;
+    padding-bottom: 125px;
+    background-image: none;
+  }
+
+  .feedback__container::before {
+    display: none;
+  }
+
+  .feedback__slogan {
+    margin-bottom: 10px;
+  }
+
+  .feedback__text {
+    margin-bottom: 25px;
+  }
+
+  .feedback form {
+    width: 670px;
+  }
+
+  .feedback input {
+    width: 320px;
+  }
+
+  .feedback textarea {
+    width: 670px;
+  }
+
+  .feedback label[for=personal-data] {
+    margin-right: 60px;
+  }
+
+  .feedback input[name=agree] {
+    left: 350px;
   }
 }
 

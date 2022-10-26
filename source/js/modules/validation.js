@@ -30,7 +30,7 @@ const validatePhone = () => {
   });
 
   input.addEventListener('blur', () => {
-    if (input.value >= '+7(') {
+    if (input.value <= '+7(' || input.value.length <= 6) {
       input.value = '';
     }
   });

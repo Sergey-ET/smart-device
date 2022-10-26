@@ -3,6 +3,12 @@
   padding-bottom: 250px;
   background-color: $color-deep-sky-blue;
   background-image: linear-gradient(-53.1deg, $color-deep-sky-blue 75%, $color-blue-opacity-05 75%);
+
+  @include vp-1023 {
+    padding-top: 50px;
+    padding-bottom: 125px;
+    background-image: none;
+  }
 }
 
 .feedback__container {
@@ -25,6 +31,12 @@
       background-image: url("../img/paper-airplane@2x.png");
     }
   }
+
+  @include vp-1023 {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .feedback__slogan {
@@ -36,18 +48,30 @@
   font-size: 36px;
   line-height: 51px;
   color: $color-default-white;
+
+  @include vp-1023 {
+    margin-bottom: 10px;
+  }
 }
 
 .feedback__text {
   display: block;
   margin-bottom: 35px;
   color: $color-default-white;
+
+  @include vp-1023 {
+    margin-bottom: 25px;
+  }
 }
 
 .feedback form {
   padding: 0;
   margin: 0;
   width: 580px;
+
+  @include vp-1023 {
+    width: 670px;
+  }
 }
 
 .form__inner {
@@ -68,6 +92,10 @@
   &::placeholder {
     color: $color-default-white;
   }
+
+  @include vp-1023 {
+    width: 320px;
+  }
 }
 
 .feedback textarea {
@@ -82,6 +110,10 @@
 
   &::placeholder {
     color: $color-default-white;
+  }
+
+  @include vp-1023 {
+    width: 670px;
   }
 }
 
@@ -117,12 +149,20 @@
   color: $color-default-white;
   opacity: 0.8;
   cursor: pointer;
+
+  @include vp-1023 {
+    margin-right: 60px;
+  }
 }
 
 .feedback input[name="agree"] {
   position: absolute;
-  top: 30px;
+  top: 35px;
   left: 320px;
+
+  @include vp-1023 {
+    left: 350px;
+  }
 }
 
 .feedback input[name="agree"]+label[for="personal-data"]::before {
