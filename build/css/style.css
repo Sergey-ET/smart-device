@@ -1810,6 +1810,7 @@ button,
 
   .feedback textarea {
     width: 670px;
+    padding-top: 32px;
   }
 
   .feedback label[for=personal-data] {
@@ -2165,6 +2166,69 @@ button,
     min-width: 270px;
     min-height: 250;
     padding: 26px 30px 40px 30px;
+  }
+
+  .feedback {
+    padding-bottom: 90px;
+  }
+
+  .feedback__slogan {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .feedback__text {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .feedback form {
+    width: 100%;
+  }
+
+  .form__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .feedback input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .feedback textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 25px;
+  }
+
+  .form__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .form__button {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .feedback label[for=personal-data] {
+    margin-right: 0;
+    margin-right: auto;
+  }
+
+  .feedback input[name=agree] {
+    width: auto;
+    margin-bottom: 0;
+    top: 100px;
+    left: 0;
   }
 }
 
