@@ -26,13 +26,13 @@
     bottom: 0;
     width: 150px;
     height: 320px;
-    background-image: url("../img/year.png");
+    background-image: url("../img/year.webp");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
 
     @include retina {
-      background-image: url("../img/year@2x.png");
+      background-image: url("../img/year@2x.webp");
     }
   }
 

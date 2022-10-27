@@ -25,13 +25,13 @@
     top: 80px;
     width: 510px;
     height: 285px;
-    background-image: url("../img/paper-airplane.png");
+    background-image: url("../img/paper-airplane.webp");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
 
     @include retina {
-      background-image: url("../img/paper-airplane@2x.png");
+      background-image: url("../img/paper-airplane@2x.webp");
     }
   }
 

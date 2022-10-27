@@ -70,84 +70,84 @@
   background-repeat: no-repeat;
 
   &:first-child {
-    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-desktop.jpg");
+    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-desktop.webp");
 
     @include retina {
-      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-desktop@2x.jpg");
+      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-desktop@2x.webp");
     }
 
     @include vp-1023 {
       &:first-child {
-        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-tablet.jpg");
+        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-tablet.webp");
 
         @include retina {
-          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-tablet@2x.jpg");
+          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-tablet@2x.webp");
         }
       }
     }
 
     @include vp-767 {
       &:first-child {
-        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-mobile.jpg");
+        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-mobile.webp");
 
         @include retina {
-          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-mobile@2x.jpg");
+          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-mobile@2x.webp");
         }
       }
     }
   }
 
   &:nth-child(2n) {
-    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-desktop.jpg");
+    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-desktop.webp");
 
     @include retina {
-      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-desktop@2x.jpg");
+      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-desktop@2x.webp");
     }
 
     @include vp-1023 {
       &:nth-child(2n) {
-        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-tablet.jpg");
+        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-tablet.webp");
 
         @include retina {
-          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-tablet@2x.jpg");
+          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-tablet@2x.webp");
         }
       }
     }
 
     @include vp-767 {
       &:nth-child(2n) {
-        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-mobile.jpg");
+        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-mobile.webp");
 
         @include retina {
-          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-mobile@2x.jpg");
+          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-mobile@2x.webp");
         }
       }
     }
   }
 
   &:last-child {
-    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-desktop.jpg");
+    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-desktop.webp");
 
     @include retina {
-      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-desktop@2x.jpg");
+      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-desktop@2x.webp");
     }
 
     @include vp-1023 {
       &:last-child {
-        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-tablet.jpg");
+        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-tablet.webp");
 
         @include retina {
-          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-tablet@2x.jpg");
+          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-tablet@2x.webp");
         }
       }
     }
 
     @include vp-767 {
       &:last-child {
-        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-mobile.jpg");
+        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-mobile.webp");
 
         @include retina {
-          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-mobile@2x.jpg");
+          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-mobile@2x.webp");
         }
       }
     }
