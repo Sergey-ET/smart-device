@@ -1141,7 +1141,7 @@ button,
   list-style: none;
 }
 
-.page-footer__menu-item:nth-child(2) .page-footer__menu-subitem {
+.page-footer__menu-item:nth-child(2n) .page-footer__menu-subitem {
   width: 345px;
 }
 
@@ -1378,7 +1378,7 @@ button,
 }
 
 .additional--nojs {
-  display: inline-block;
+  display: block;
 }
 
 .products {
@@ -2010,7 +2010,7 @@ button,
     height: auto;
   }
 
-  .page-footer__menu-item:nth-child(2) .page-footer__menu-subitem {
+  .page-footer__menu-item:nth-child(2n) .page-footer__menu-subitem {
     width: 320px;
   }
 
@@ -2306,11 +2306,11 @@ button,
     cursor: pointer;
   }
 
-  .page-footer__menu-item:nth-child(2) .page-footer__menu-subitem {
+  .page-footer__menu-item:nth-child(2n) .page-footer__menu-subitem {
     width: 100%;
   }
 
-  .page-footer__menu-item:nth-child(2) .page-footer__menu-subitem:first-child {
+  .page-footer__menu-item:nth-child(2n) .page-footer__menu-subitem:first-child {
     margin-bottom: 15px;
   }
 

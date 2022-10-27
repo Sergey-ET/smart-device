@@ -179,7 +179,7 @@
   }
 }
 
-.page-footer__menu-item:nth-child(2) .page-footer__menu-subitem {
+.page-footer__menu-item:nth-child(2n) .page-footer__menu-subitem {
   width: 345px;
 
   @include vp-1023 {
@@ -191,7 +191,7 @@
   }
 }
 
-.page-footer__menu-item:nth-child(2) .page-footer__menu-subitem:first-child {
+.page-footer__menu-item:nth-child(2n) .page-footer__menu-subitem:first-child {
   @include vp-767 {
     margin-bottom: 15px;
   }
