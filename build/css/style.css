@@ -1203,7 +1203,7 @@ button,
 }
 
 .major__button {
-  max-width: 411px;
+  max-width: 415px;
   padding: 17px 27px;
   font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   font-style: normal;
@@ -2529,7 +2529,7 @@ button,
 
   .products__link {
     min-width: 270px;
-    min-height: 250;
+    min-height: 250px;
     padding: 26px 30px 40px 30px;
   }
 
