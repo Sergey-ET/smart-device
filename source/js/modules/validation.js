@@ -1,5 +1,5 @@
 const validatePhone = () => {
-  let eventCalllback = function (e) {
+  let eventCallback = function (e) {
     let el = e.target;
     let clearVal = el.dataset.phoneClear;
     let pattern = el.dataset.phonePattern;
@@ -30,7 +30,7 @@ const validatePhone = () => {
   let phoneInputs = document.querySelectorAll('[data-phone-pattern]');
   for (let elem of phoneInputs) {
     for (let ev of ['input', 'blur', 'focus']) {
-      elem.addEventListener(ev, eventCalllback);
+      elem.addEventListener(ev, eventCallback);
     }
   }
 };
