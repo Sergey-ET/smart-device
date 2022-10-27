@@ -58,9 +58,15 @@
 
   &__content {
     position: relative;
+    top: -270px;
+    left: -8px;
 
     width: 500px;
-    padding: 40px;
+    min-height: 610px;
+    padding-top: 47px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 45px;
 
     background-color: $color-deep-sky-blue;
 
@@ -74,8 +80,8 @@
 
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 17px;
+    right: 15px;
     z-index: 1;
 
     width: 40px;
@@ -128,12 +134,12 @@
 
 .modal h2 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
-  line-height: 42px;
+  line-height: 22px;
   color: $color-default-white;
 }
 
@@ -146,7 +152,7 @@
 .modal input {
   width: 100%;
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   color: $color-default-white;
   background: $color-blue-opacity-015;
   border: none;
@@ -175,7 +181,8 @@
 .modal__button {
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
+  padding-bottom: 13px;
   font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -190,6 +197,7 @@
 .modal label[for="modal-personal-data"] {
   position: relative;
   display: block;
+  left: 9px;
   padding-left: 26px;
   font-weight: 400;
   font-size: 14px;
@@ -201,8 +209,8 @@
 
 .modal input[name="modal-agree"] {
   position: absolute;
-  bottom: 10px;
-  left: -43px;
+  bottom: 20px;
+  left: -32px;
 }
 
 .modal input[name="modal-agree"]+label[for="modal-personal-data"]::before {
