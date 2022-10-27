@@ -1,0 +1,141 @@
+.popup {
+  position: relative;
+}
+
+.popup__content {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  min-height: 610px;
+  padding-top: 47px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 45px;
+  background-color: $color-deep-sky-blue;
+  border-radius: 3px;
+}
+
+.popup__close-btn {
+  display: none;
+}
+
+.popup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup h2 {
+  margin: 0;
+  margin-bottom: 14px;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+.popup span {
+  display: block;
+  margin-bottom: 40px;
+  color: $color-default-white;
+}
+
+.popup input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 21px;
+  color: $color-default-white;
+  background: $color-blue-opacity-015;
+  border: none;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: $color-default-white;
+  }
+}
+
+.popup textarea {
+  width: 100%;
+  height: 155px;
+  padding: 25px 15px 15px;
+  margin-bottom: 25px;
+  color: $color-default-white;
+  background: $color-blue-opacity-015;
+  border: none;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: $color-default-white;
+  }
+}
+
+.popup__button {
+  display: block;
+  width: 100%;
+  margin-bottom: 19px;
+  padding-bottom: 13px;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+}
+
+.popup label[for="popup-personal-data"] {
+  position: relative;
+  display: block;
+  left: 9px;
+  padding-left: 26px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.popup input[name="popup-agree"] {
+  position: absolute;
+  bottom: 20px;
+  left: -32px;
+}
+
+.popup input[name="popup-agree"] + label[for="popup-personal-data"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+}
+
+.popup input[name="popup-agree"]:checked + label[for="popup-personal-data"]::before {
+  background-image: url("../img/svg/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.popup input[name="popup-agree"]:disabled + label[for="popup-personal-data"] {
+  color: $color-blue-opacity-015;
+}
+
+.popup input[name="popup-agree"]:focus + label[for="popup-personal-data"]::before {
+  border-color: $color-black-pearl;
+}
+
+.popup input[name="popup-agree"]:disabled + label[for="popup-personal-data"]::before {
+  border-color: $color-blue-opacity-015;
+}
+
+.popup input[name="popup-agree"]:checked:disabled + label[for="popup-personal-data"]::before {
+  opacity: 0.4;
+}
