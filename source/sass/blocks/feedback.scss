@@ -225,7 +225,7 @@
 .feedback input[name="agree"] {
   position: absolute;
   top: 35px;
-  left: 320px;
+  left: 316px;
 
   @include vp-1023 {
     left: 350px;
@@ -239,7 +239,7 @@
   }
 }
 
-.feedback input[name="agree"]+label[for="personal-data"]::before {
+.feedback input[name="agree"] + label[for="personal-data"]::before {
   content: "";
   position: absolute;
   top: 7px;
@@ -250,20 +250,24 @@
   border-radius: 2px;
 }
 
-.feedback input[name="agree"]:checked+label[for="personal-data"]::before {
+.feedback input[name="agree"]:checked + label[for="personal-data"]::before {
   background-image: url("../img/svg/tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.feedback input[name="agree"]:disabled+label[for="personal-data"] {
+.feedback input[name="agree"]:disabled + label[for="personal-data"] {
   color: $color-blue-opacity-015;
 }
 
-.feedback input[name="agree"]:disabled+label[for="personal-data"]::before {
+.feedback input[name="agree"]:focus + label[for="personal-data"]::before {
+  border-color: $color-black-pearl;
+}
+
+.feedback input[name="agree"]:disabled + label[for="personal-data"]::before {
   border-color: $color-blue-opacity-015;
 }
 
-.feedback input[name="agree"]:checked:disabled+label[for="personal-data"]::before {
+.feedback input[name="agree"]:checked:disabled + label[for="personal-data"]::before {
   opacity: 0.4;
 }

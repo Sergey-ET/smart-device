@@ -213,7 +213,7 @@
   left: -32px;
 }
 
-.modal input[name="modal-agree"]+label[for="modal-personal-data"]::before {
+.modal input[name="modal-agree"] + label[for="modal-personal-data"]::before {
   content: "";
   position: absolute;
   top: 0;
@@ -224,20 +224,24 @@
   border-radius: 2px;
 }
 
-.modal input[name="modal-agree"]:checked+label[for="modal-personal-data"]::before {
+.modal input[name="modal-agree"]:checked + label[for="modal-personal-data"]::before {
   background-image: url("../img/svg/tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.modal input[name="modal-agree"]:disabled+label[for="modal-personal-data"] {
+.modal input[name="modal-agree"]:disabled + label[for="modal-personal-data"] {
   color: $color-blue-opacity-015;
 }
 
-.modal input[name="modal-agree"]:disabled+label[for="modal-personal-data"]::before {
+.modal input[name="modal-agree"]:focus + label[for="modal-personal-data"]::before {
+  border-color: $color-black-pearl;
+}
+
+.modal input[name="modal-agree"]:disabled + label[for="modal-personal-data"]::before {
   border-color: $color-blue-opacity-015;
 }
 
-.modal input[name="modal-agree"]:checked:disabled+label[for="modal-personal-data"]::before {
+.modal input[name="modal-agree"]:checked:disabled + label[for="modal-personal-data"]::before {
   opacity: 0.4;
 }

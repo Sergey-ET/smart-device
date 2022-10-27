@@ -931,6 +931,10 @@ button,
   color: rgba(4, 20, 39, 0.15);
 }
 
+.modal input[name=modal-agree]:focus + label[for=modal-personal-data]::before {
+  border-color: #041827;
+}
+
 .modal input[name=modal-agree]:disabled + label[for=modal-personal-data]::before {
   border-color: rgba(4, 20, 39, 0.15);
 }
@@ -1654,7 +1658,7 @@ button,
 .feedback input[name=agree] {
   position: absolute;
   top: 35px;
-  left: 320px;
+  left: 316px;
 }
 
 .feedback input[name=agree] + label[for=personal-data]::before {
@@ -1676,6 +1680,10 @@ button,
 
 .feedback input[name=agree]:disabled + label[for=personal-data] {
   color: rgba(4, 20, 39, 0.15);
+}
+
+.feedback input[name=agree]:focus + label[for=personal-data]::before {
+  border-color: #041827;
 }
 
 .feedback input[name=agree]:disabled + label[for=personal-data]::before {
