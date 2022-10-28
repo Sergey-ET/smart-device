@@ -1443,7 +1443,7 @@ button,
   background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-desktop.webp");
 }
 
-.products__item::before {
+.products__item::after {
   content: "";
   position: absolute;
   width: 60px;
@@ -1452,18 +1452,10 @@ button,
   bottom: 0;
   background-color: #00b2ff;
   border-radius: 3px 0 0 0;
-  cursor: pointer;
-}
-
-.products__item::after {
-  content: "";
-  position: absolute;
-  width: 5px;
-  height: 10px;
-  right: 26px;
-  bottom: 25px;
   background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
+  background-size: 5px 10px;
+  background-position: 50%;
   cursor: pointer;
 }
 
@@ -2509,17 +2501,11 @@ button,
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-mobile.webp");
   }
 
-  .products__item::before {
+  .products__item::after {
     width: 40px;
     height: 40px;
-  }
-
-  .products__item::after {
-    right: 16px;
-    bottom: 17px;
-    width: 5px;
-    height: 6px;
     background-image: url("../img/svg/arrow-small.svg");
+    background-size: 5px 6px;
   }
 
   .products__item h3 {
