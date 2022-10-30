@@ -1,14 +1,25 @@
-## Краткая инструкция по работе
-Для начала работы у вас должна быть установлена **Node.js**
+# <img align="left" width="55" height="55" alt="Logo" src="./source/img/svg/logo-mobile.svg"> "Smart Device" - Supplier of electronic components
 
-### Основные команды для работы
+<img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/javascript/logo-for-github-2.png">
+
+Production practice at [HTML Academy](https://htmlacademy.ru).
+
+Project completed by [Sergey Troshkin](https://htmlacademy.ru/profile/therealdeveloper)
+
+## Quick Start Guide
+
+To get started you must have **Node.js**
+
+### Basic command
+
 ```bash
-npm i # Установка
-npm start # Запуск локального сервера
-npm run build # Сборка проекта, минификация скриптов и оптимизация изображений перед деплоем на прод
-npm test # Запуск тестирования на соответствия кодгайдам
-npm run webp # Создание webp изображений в директории source
+npm i # Installation
+npm start # Local server running
+npm run build # Project building, scripting and image optimization before production deploying
+npm run test # Run a code guide test
+npm run webp # Create webp images in source directory
 ```
 
-### Вся разработка ведётся в директории `source`
-### Итоговый код попадает в директорию `build`
+### All development is done in the `source` directory
+
+### The final code goes into the `build` directory
