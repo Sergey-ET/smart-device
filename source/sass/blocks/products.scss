@@ -64,90 +64,164 @@
 
 .products__item {
   position: relative;
+  display: flex;
+  flex-grow: 1;
   background-color: $color-black-opacity-07;
   background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
 
   &:first-child {
-    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-desktop.webp");
+    background-image: linear-gradient(
+        $color-blue-opacity-05,
+        $color-blue-opacity-05
+      ),
+      url("../img/production-desktop.webp");
 
     @include retina {
-      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-desktop@2x.webp");
+      background-image: linear-gradient(
+          $color-blue-opacity-05,
+          $color-blue-opacity-05
+        ),
+        url("../img/production-desktop@2x.webp");
     }
 
     @include vp-1023 {
       &:first-child {
-        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-tablet.webp");
+        background-image: linear-gradient(
+            $color-blue-opacity-05,
+            $color-blue-opacity-05
+          ),
+          url("../img/production-tablet.webp");
 
         @include retina {
-          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-tablet@2x.webp");
+          background-image: linear-gradient(
+              $color-blue-opacity-05,
+              $color-blue-opacity-05
+            ),
+            url("../img/production-tablet@2x.webp");
         }
       }
     }
 
     @include vp-767 {
       &:first-child {
-        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-mobile.webp");
+        background-image: linear-gradient(
+            $color-blue-opacity-05,
+            $color-blue-opacity-05
+          ),
+          url("../img/production-mobile.webp");
 
         @include retina {
-          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/production-mobile@2x.webp");
+          background-image: linear-gradient(
+              $color-blue-opacity-05,
+              $color-blue-opacity-05
+            ),
+            url("../img/production-mobile@2x.webp");
         }
       }
     }
   }
 
   &:nth-child(2n) {
-    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-desktop.webp");
+    background-image: linear-gradient(
+        $color-blue-opacity-05,
+        $color-blue-opacity-05
+      ),
+      url("../img/assembling-desktop.webp");
 
     @include retina {
-      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-desktop@2x.webp");
+      background-image: linear-gradient(
+          $color-blue-opacity-05,
+          $color-blue-opacity-05
+        ),
+        url("../img/assembling-desktop@2x.webp");
     }
 
     @include vp-1023 {
       &:nth-child(2n) {
-        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-tablet.webp");
+        background-image: linear-gradient(
+            $color-blue-opacity-05,
+            $color-blue-opacity-05
+          ),
+          url("../img/assembling-tablet.webp");
 
         @include retina {
-          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-tablet@2x.webp");
+          background-image: linear-gradient(
+              $color-blue-opacity-05,
+              $color-blue-opacity-05
+            ),
+            url("../img/assembling-tablet@2x.webp");
         }
       }
     }
 
     @include vp-767 {
       &:nth-child(2n) {
-        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-mobile.webp");
+        background-image: linear-gradient(
+            $color-blue-opacity-05,
+            $color-blue-opacity-05
+          ),
+          url("../img/assembling-mobile.webp");
 
         @include retina {
-          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/assembling-mobile@2x.webp");
+          background-image: linear-gradient(
+              $color-blue-opacity-05,
+              $color-blue-opacity-05
+            ),
+            url("../img/assembling-mobile@2x.webp");
         }
       }
     }
   }
 
   &:last-child {
-    background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-desktop.webp");
+    background-image: linear-gradient(
+        $color-blue-opacity-05,
+        $color-blue-opacity-05
+      ),
+      url("../img/components-desktop.webp");
 
     @include retina {
-      background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-desktop@2x.webp");
+      background-image: linear-gradient(
+          $color-blue-opacity-05,
+          $color-blue-opacity-05
+        ),
+        url("../img/components-desktop@2x.webp");
     }
 
     @include vp-1023 {
       &:last-child {
-        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-tablet.webp");
+        background-image: linear-gradient(
+            $color-blue-opacity-05,
+            $color-blue-opacity-05
+          ),
+          url("../img/components-tablet.webp");
 
         @include retina {
-          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-tablet@2x.webp");
+          background-image: linear-gradient(
+              $color-blue-opacity-05,
+              $color-blue-opacity-05
+            ),
+            url("../img/components-tablet@2x.webp");
         }
       }
     }
 
     @include vp-767 {
       &:last-child {
-        background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-mobile.webp");
+        background-image: linear-gradient(
+            $color-blue-opacity-05,
+            $color-blue-opacity-05
+          ),
+          url("../img/components-mobile.webp");
 
         @include retina {
-          background-image: linear-gradient($color-blue-opacity-05, $color-blue-opacity-05), url("../img/components-mobile@2x.webp");
+          background-image: linear-gradient(
+              $color-blue-opacity-05,
+              $color-blue-opacity-05
+            ),
+            url("../img/components-mobile@2x.webp");
         }
       }
     }
@@ -165,7 +239,7 @@
     background-image: url("../img/svg/arrow.svg");
     background-repeat: no-repeat;
     background-size: 5px 10px;
-    background-position: 50%;;
+    background-position: 50%;
     cursor: pointer;
   }
 
@@ -206,8 +280,7 @@
 
 .products__link {
   display: block;
-  padding: 47px 80px 60px 40px;
-  min-width: 350px;
+  padding: 47px 0 60px 40px;
   min-height: 650px;
 
   @include vp-1023 {

@@ -1419,6 +1419,12 @@ button,
 
 .products__item {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   background-color: rgba(3, 16, 27, 0.7);
   background-size: cover;
   background-position: 0 0;
@@ -1472,8 +1478,7 @@ button,
 
 .products__link {
   display: block;
-  padding: 47px 80px 60px 40px;
-  min-width: 350px;
+  padding: 47px 0 60px 40px;
   min-height: 650px;
 }
 
