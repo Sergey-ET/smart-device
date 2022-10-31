@@ -1479,7 +1479,13 @@ button,
 .products__link {
   display: block;
   padding: 47px 0 60px 40px;
+  width: 100%;
   min-height: 650px;
+}
+
+.products__item:hover .products__link {
+  -webkit-box-shadow: 0 0 10px #ffffff;
+  box-shadow: 0 0 10px #ffffff;
 }
 
 .feedback {
@@ -2139,6 +2145,11 @@ button,
     min-width: 670px;
     min-height: 250px;
     padding: 37px 45px 60px 45px;
+  }
+
+  .products__item:hover .products__link {
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 
   .feedback {

@@ -281,6 +281,7 @@
 .products__link {
   display: block;
   padding: 47px 0 60px 40px;
+  width: 100%;
   min-height: 650px;
 
   @include vp-1023 {
@@ -293,5 +294,13 @@
     min-width: 270px;
     min-height: 250px;
     padding: 26px 30px 40px 30px;
+  }
+}
+
+.products__item:hover .products__link {
+  box-shadow: 0 0 10px $color-default-white;
+
+  @include vp-1023 {
+    box-shadow: none;
   }
 }
