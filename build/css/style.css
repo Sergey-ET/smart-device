@@ -1491,41 +1491,44 @@ button,
 }
 
 .feedback__container {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.feedback__container::before {
-  content: "";
-  position: absolute;
-  left: 40px;
-  top: 80px;
-  width: 510px;
-  height: 285px;
-  background-image: url("../img/paper-airplane.webp");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: cover;
+.feedback__image {
+  width: 100%;
+  min-width: 300px;
+  max-width: 510px;
+  height: auto;
+  margin-top: 20px;
 }
 
 .feedback__slogan {
   display: block;
-  margin-right: 51px;
+  margin-left: -5px;
   margin-bottom: 11px;
   font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
-  text-align: right;
+  text-align: left;
   color: #ffffff;
 }
 
 .feedback__text {
   display: block;
-  margin-right: 273px;
   margin-bottom: 36px;
   color: #ffffff;
-  text-align: right;
+  text-align: left;
 }
 
 .feedback form {
@@ -2144,20 +2147,24 @@ button,
     background-image: none;
   }
 
-  .feedback__container::before {
+  .feedback__container {
+    gap: 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .feedback__image {
     display: none;
   }
 
   .feedback__slogan {
-    margin-right: 0;
+    margin-left: 0;
     margin-bottom: 6px;
-    text-align: left;
   }
 
   .feedback__text {
-    margin-right: 0;
     margin-bottom: 26px;
-    text-align: left;
   }
 
   .feedback form {
@@ -2528,6 +2535,10 @@ button,
     padding-bottom: 85px;
   }
 
+  .feedback__subcontainer {
+    width: 100%;
+  }
+
   .feedback__slogan {
     margin-bottom: 8px;
     font-size: 30px;
@@ -2642,9 +2653,5 @@ button,
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/components-desktop@2x.webp");
     background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-desktop@2x.webp");
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-desktop@2x.webp");
-  }
-
-  .feedback__container::before {
-    background-image: url("../img/paper-airplane@2x.webp");
   }
 }
