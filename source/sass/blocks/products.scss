@@ -66,6 +66,7 @@
   position: relative;
   display: flex;
   flex-grow: 1;
+  max-width: 29%;
   background-color: $color-black-opacity-07;
   background-size: cover;
   background-position: 0 0;
@@ -87,6 +88,8 @@
     }
 
     @include vp-1023 {
+      max-width: 100%;
+
       &:first-child {
         background-image: linear-gradient(
             $color-blue-opacity-05,
@@ -123,7 +126,7 @@
     }
   }
 
-  &:nth-child(2n) {
+  &:nth-child(even) {
     background-image: linear-gradient(
         $color-blue-opacity-05,
         $color-blue-opacity-05
@@ -139,7 +142,9 @@
     }
 
     @include vp-1023 {
-      &:nth-child(2n) {
+      max-width: 100%;
+
+      &:nth-child(even) {
         background-image: linear-gradient(
             $color-blue-opacity-05,
             $color-blue-opacity-05
@@ -157,7 +162,7 @@
     }
 
     @include vp-767 {
-      &:nth-child(2n) {
+      &:nth-child(even) {
         background-image: linear-gradient(
             $color-blue-opacity-05,
             $color-blue-opacity-05
@@ -175,7 +180,7 @@
     }
   }
 
-  &:last-child {
+  &:nth-child(odd):not(:first-child) {
     background-image: linear-gradient(
         $color-blue-opacity-05,
         $color-blue-opacity-05
@@ -191,7 +196,9 @@
     }
 
     @include vp-1023 {
-      &:last-child {
+      max-width: 100%;
+
+      &:nth-child(odd):not(:first-child) {
         background-image: linear-gradient(
             $color-blue-opacity-05,
             $color-blue-opacity-05
@@ -209,7 +216,7 @@
     }
 
     @include vp-767 {
-      &:last-child {
+      &:nth-child(odd):not(:first-child) {
         background-image: linear-gradient(
             $color-blue-opacity-05,
             $color-blue-opacity-05

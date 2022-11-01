@@ -1425,6 +1425,7 @@ button,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  max-width: 29%;
   background-color: rgba(3, 16, 27, 0.7);
   background-size: cover;
   background-position: 0 0;
@@ -1437,13 +1438,13 @@ button,
   background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/production-desktop.webp");
 }
 
-.products__item:nth-child(2n) {
+.products__item:nth-child(even) {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/assembling-desktop.webp");
   background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling-desktop.webp");
   background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling-desktop.webp");
 }
 
-.products__item:last-child {
+.products__item:nth-child(odd):not(:first-child) {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/components-desktop.webp");
   background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-desktop.webp");
   background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-desktop.webp");
@@ -2114,19 +2115,31 @@ button,
     gap: 30px;
   }
 
+  .products__item:first-child {
+    max-width: 100%;
+  }
+
   .products__item:first-child:first-child {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/production-tablet.webp");
     background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/production-tablet.webp");
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/production-tablet.webp");
   }
 
-  .products__item:nth-child(2n):nth-child(2n) {
+  .products__item:nth-child(even) {
+    max-width: 100%;
+  }
+
+  .products__item:nth-child(even):nth-child(even) {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/assembling-tablet.webp");
     background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling-tablet.webp");
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling-tablet.webp");
   }
 
-  .products__item:last-child:last-child {
+  .products__item:nth-child(odd):not(:first-child) {
+    max-width: 100%;
+  }
+
+  .products__item:nth-child(odd):not(:first-child):nth-child(odd):not(:first-child) {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/components-tablet.webp");
     background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-tablet.webp");
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-tablet.webp");
@@ -2209,13 +2222,13 @@ button,
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/production-tablet@2x.webp");
   }
 
-  .products__item:nth-child(2n):nth-child(2n) {
+  .products__item:nth-child(even):nth-child(even) {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/assembling-tablet@2x.webp");
     background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling-tablet@2x.webp");
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling-tablet@2x.webp");
   }
 
-  .products__item:last-child:last-child {
+  .products__item:nth-child(odd):not(:first-child):nth-child(odd):not(:first-child) {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/components-tablet@2x.webp");
     background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-tablet@2x.webp");
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-tablet@2x.webp");
@@ -2512,13 +2525,13 @@ button,
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/production-mobile.webp");
   }
 
-  .products__item:nth-child(2n):nth-child(2n) {
+  .products__item:nth-child(even):nth-child(even) {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/assembling-mobile.webp");
     background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling-mobile.webp");
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling-mobile.webp");
   }
 
-  .products__item:last-child:last-child {
+  .products__item:nth-child(odd):not(:first-child):nth-child(odd):not(:first-child) {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/components-mobile.webp");
     background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-mobile.webp");
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-mobile.webp");
@@ -2618,13 +2631,13 @@ button,
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/production-mobile@2x.webp");
   }
 
-  .products__item:nth-child(2n):nth-child(2n) {
+  .products__item:nth-child(even):nth-child(even) {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/assembling-mobile@2x.webp");
     background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling-mobile@2x.webp");
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling-mobile@2x.webp");
   }
 
-  .products__item:last-child:last-child {
+  .products__item:nth-child(odd):not(:first-child):nth-child(odd):not(:first-child) {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/components-mobile@2x.webp");
     background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-mobile@2x.webp");
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-mobile@2x.webp");
@@ -2654,13 +2667,13 @@ button,
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/production-desktop@2x.webp");
   }
 
-  .products__item:nth-child(2n) {
+  .products__item:nth-child(even) {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/assembling-desktop@2x.webp");
     background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling-desktop@2x.webp");
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/assembling-desktop@2x.webp");
   }
 
-  .products__item:last-child {
+  .products__item:nth-child(odd):not(:first-child) {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/components-desktop@2x.webp");
     background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-desktop@2x.webp");
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/components-desktop@2x.webp");
