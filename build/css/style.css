@@ -1117,7 +1117,6 @@ button,
   border-top: 1px solid #ebebeb;
   border-right: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
-  cursor: pointer;
 }
 
 .features__item::before {
@@ -1130,16 +1129,14 @@ button,
   background-color: #00b2ff;
 }
 
-.features__item:hover,
-.features__item:focus {
+.features__item:hover {
   background-color: #00b2ff;
   border-top: 1px solid transparent;
   border-right: 1px solid transparent;
   border-bottom: 1px solid transparent;
 }
 
-.features__item:hover::before,
-.features__item:focus::before {
+.features__item:hover::before {
   top: 0;
   bottom: 0;
 }

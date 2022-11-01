@@ -39,7 +39,6 @@
   border-top: 1px solid $color-whisper;
   border-right: 1px solid $color-whisper;
   border-bottom: 1px solid $color-whisper;
-  cursor: pointer;
 
   &::before {
     content: "";
@@ -51,8 +50,7 @@
     background-color: $color-deep-sky-blue;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: $color-deep-sky-blue;
     border-top: 1px solid transparent;
     border-right: 1px solid transparent;
