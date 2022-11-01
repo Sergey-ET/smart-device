@@ -1,11 +1,15 @@
 .page-header {
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   padding-top: 30px;
   padding-bottom: 35px;
   background: $black-to-up;
   z-index: 1;
 
   @include vp-1023 {
+    position: static;
     padding-top: 20px;
     padding-bottom: 25px;
   }
@@ -59,13 +63,11 @@
   padding-bottom: 5px;
 
   @include vp-1023 {
-    min-width: 100px;
-    max-width: 450px;
+    width: 100px;
     padding-bottom: 15px;
   }
 
   @include vp-767 {
-    max-width: 200px;
     padding-bottom: 0;
   }
 }

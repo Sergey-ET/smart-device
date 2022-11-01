@@ -944,7 +944,10 @@ button,
 }
 
 .page-header {
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   padding-top: 30px;
   padding-bottom: 35px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
@@ -1028,7 +1031,6 @@ button,
 
 .major {
   position: relative;
-  top: -120px;
   padding-top: 305px;
   padding-bottom: 280px;
   width: 100%;
@@ -1088,6 +1090,7 @@ button,
 }
 
 .features {
+  padding-top: 120px;
   padding-bottom: 60px;
 }
 
@@ -1940,6 +1943,7 @@ button,
   }
 
   .page-header {
+    position: static;
     padding-top: 20px;
     padding-bottom: 25px;
   }
@@ -1949,8 +1953,7 @@ button,
   }
 
   .page-header__contacts {
-    min-width: 100px;
-    max-width: 450px;
+    width: 100px;
     padding-bottom: 15px;
   }
 
@@ -1978,6 +1981,7 @@ button,
   }
 
   .major {
+    top: -120px;
     min-height: 660px;
     padding-top: 200px;
     padding-bottom: 205px;
@@ -2001,6 +2005,7 @@ button,
   .features {
     position: relative;
     top: -40px;
+    padding-top: 0;
     padding-bottom: 35px;
   }
 
@@ -2190,7 +2195,7 @@ button,
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 0;
-    margin-bottom: 18px;
+    margin-bottom: 37px;
   }
 
   .page-footer__logo-image {
@@ -2209,7 +2214,14 @@ button,
 
   .page-footer__menu-list {
     width: 100%;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     height: auto;
+  }
+
+  .page-footer__menu-item {
+    width: auto;
+    right: 0;
   }
 
   .page-footer__menu-sublist {
@@ -2282,7 +2294,6 @@ button,
   }
 
   .page-header__contacts {
-    max-width: 200px;
     padding-bottom: 0;
   }
 
@@ -2533,10 +2544,6 @@ button,
     padding-bottom: 35px;
   }
 
-  .page-footer__container {
-    gap: 0;
-  }
-
   .page-footer__inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2551,6 +2558,7 @@ button,
   }
 
   .page-footer__menu-list {
+    min-height: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;

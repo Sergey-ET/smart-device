@@ -1,6 +1,6 @@
 .major {
   position: relative;
-  top: -120px;
+  // top: -120px;
   padding-top: 305px;
   padding-bottom: 280px;
   width: 100%;
@@ -16,6 +16,7 @@
   }
 
   @include vp-1023 {
+    top: -120px;
     min-height: 660px;
     padding-top: 200px;
     padding-bottom: 205px;

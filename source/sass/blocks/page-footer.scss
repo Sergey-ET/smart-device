@@ -18,14 +18,9 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  // gap: 20px;
 
   @include vp-1023 {
     flex-direction: column;
-  }
-
-  @include vp-767 {
-    gap: 0;
   }
 }
 
@@ -39,7 +34,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 0;
-    margin-bottom: 18px;
+    margin-bottom: 37px;
   }
 
   @include vp-767 {
@@ -111,10 +106,12 @@
 
   @include vp-1023 {
     width: 100%;
+    flex-wrap: nowrap;
     height: auto;
   }
 
   @include vp-767 {
+    min-height: 0;
     flex-direction: column;
   }
 }
@@ -127,6 +124,11 @@
   &--contacts {
     position: relative;
     right: 35px;
+  }
+
+  @include vp-1023 {
+    width: auto;
+    right: 0;
   }
 
   @include vp-767 {
@@ -190,7 +192,6 @@
 }
 
 .page-footer__menu-item:nth-child(2n) .page-footer__menu-subitem {
-  // width: 345px;
   width: 310px;
 
   @include vp-1023 {
