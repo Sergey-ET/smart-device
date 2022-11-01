@@ -55,7 +55,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
-  min-width: 460px;
+  width: 460px;
   padding-bottom: 5px;
 
   @include vp-1023 {
@@ -106,8 +106,8 @@
 .page-header__button {
   display: block;
   padding: 10px 0;
-  min-width: 160px;
-  height: 40px;
+  max-width: 160px;
+  min-height: 40px;
   margin-bottom: 7px;
   font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   font-style: normal;
