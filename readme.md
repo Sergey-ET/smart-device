@@ -26,3 +26,4 @@ npm run webp # Create webp images in source directory
 
 ## Project Overview
 
+https://sergey-et.github.io/smart-device/
