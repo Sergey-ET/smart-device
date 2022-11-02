@@ -217,34 +217,6 @@
   }
 }
 
-// .page-footer__menu-subitem {
-//   @include vp-1919 {
-//     &--assembling {
-//       order: 5;
-//     }
-
-//     &--contacts {
-//       order: 4;
-//     }
-
-//     &--production {
-//       order: 3;
-//     }
-
-//     &--products {
-//       order: 2;
-//     }
-
-//     &--delivery {
-//       order: 2;
-//     }
-//   }
-
-//   @include vp-1023 {
-//     order: 0;
-//   }
-// }
-
 .page-footer__menu-item:nth-child(2n) .page-footer__menu-subitem {
   width: 310px;
 
