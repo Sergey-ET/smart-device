@@ -1,4 +1,4 @@
-# <img align="left" width="55" height="55" alt="Logo" src="./source/img/svg/logo-mobile.svg"> "Smart Device" - Supplier of electronic components
+# <img align="left" width="55" height="55" alt="Logo" src="./img/svg/logo-mobile.svg"> "Smart Device" - Supplier of electronic components
 
 <img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/javascript/logo-for-github-2.png">
 
@@ -23,3 +23,6 @@ npm run webp # Create webp images in source directory
 ### All development is done in the `source` directory
 
 ### The final code goes into the `build` directory
+
+## Project Overview
+
