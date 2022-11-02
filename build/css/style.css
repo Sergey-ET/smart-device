@@ -1607,9 +1607,9 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 150px;
@@ -1617,6 +1617,14 @@ button,
   margin-left: 10px;
   padding: 0;
   list-style: none;
+}
+
+.page-footer__socials-item {
+  margin-right: 15px;
+}
+
+.page-footer__socials-item:last-child {
+  margin-right: 0;
 }
 
 .page-footer__socials-link {
