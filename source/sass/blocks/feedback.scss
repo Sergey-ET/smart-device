@@ -2,11 +2,9 @@
   padding-top: 166px;
   padding-bottom: 250px;
   background-color: $color-deep-sky-blue;
-  background-image: linear-gradient(
-    -40.8deg,
-    $color-deep-sky-blue 66.4%,
-    $color-blue-opacity-05 66.4%
-  );
+  background-image: linear-gradient(-40.8deg,
+      $color-deep-sky-blue 66.4%,
+      $color-blue-opacity-05 66.4%);
 
   @include vp-1023 {
     padding-top: 46px;
@@ -242,7 +240,7 @@
   }
 }
 
-.feedback input[name="agree"] + label[for="personal-data"]::before {
+.feedback input[name="agree"]+label[for="personal-data"]::before {
   content: "";
   position: absolute;
   top: 7px;
@@ -253,26 +251,24 @@
   border-radius: 2px;
 }
 
-.feedback input[name="agree"]:checked + label[for="personal-data"]::before {
+.feedback input[name="agree"]:checked+label[for="personal-data"]::before {
   background-image: url("../img/svg/tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.feedback input[name="agree"]:disabled + label[for="personal-data"] {
+.feedback input[name="agree"]:disabled+label[for="personal-data"] {
   color: $color-blue-opacity-015;
 }
 
-.feedback input[name="agree"]:focus + label[for="personal-data"]::before {
+.feedback input[name="agree"]:focus+label[for="personal-data"]::before {
   border-color: $color-black-pearl;
 }
 
-.feedback input[name="agree"]:disabled + label[for="personal-data"]::before {
+.feedback input[name="agree"]:disabled+label[for="personal-data"]::before {
   border-color: $color-blue-opacity-015;
 }
 
-.feedback
-  input[name="agree"]:checked:disabled
-  + label[for="personal-data"]::before {
+.feedback input[name="agree"]:checked:disabled+label[for="personal-data"]::before {
   opacity: 0.4;
 }
