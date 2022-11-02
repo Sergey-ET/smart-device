@@ -1594,6 +1594,7 @@ button,
 .page-footer__inner {
   min-width: 215px;
   margin-top: -7px;
+  margin-right: auto;
 }
 
 .page-footer__logo-image {
@@ -1660,19 +1661,27 @@ button,
   flex-wrap: wrap;
   row-gap: 30px;
   width: 845px;
-  min-height: 170px;
+  height: auto;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .page-footer__menu-item--topics {
-  width: 415px;
+  width: auto;
 }
 
 .page-footer__menu-item--contacts {
   position: relative;
   right: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 310px;
 }
 
 .page-footer__menu-title {
@@ -1692,32 +1701,79 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
-  height: 150px;
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-right: auto;
+}
+
+.page-footer__menu-sublist--topics {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto -webkit-min-content;
+  -ms-grid-columns: auto min-content;
+  grid-template-columns: auto -webkit-min-content;
+  grid-template-columns: auto min-content;
+  -ms-grid-rows: (-webkit-min-content)[4];
+  -ms-grid-rows: (min-content)[4];
+  grid-template-rows: repeat(4, -webkit-min-content);
+  grid-template-rows: repeat(4, min-content);
+  height: auto;
+  -webkit-column-gap: 48px;
+  -moz-column-gap: 48px;
+  column-gap: 48px;
 }
 
 .page-footer__menu-item:nth-child(2n) .page-footer__menu-subitem {
-  width: 310px;
+  width: auto;
 }
 
 .page-footer__menu-subitem {
   margin-bottom: 7px;
-  width: 220px;
+  width: auto;
 }
 
 .page-footer__menu-subitem:last-child {
   margin-bottom: 0;
+}
+
+.page-footer__menu-subitem--assembling {
+  -webkit-box-ordinal-group: 6;
+  -ms-flex-order: 5;
+  order: 5;
+}
+
+.page-footer__menu-subitem--contacts {
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+.page-footer__menu-subitem--production {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.page-footer__menu-subitem--products {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.page-footer__menu-subitem--delivery {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
 }
 
 .page-footer__menu-link {
@@ -1949,70 +2005,6 @@ button,
     }
   }
 */
-
-@media (max-width: 1919px) {
-  .page-footer__inner {
-    margin-right: auto;
-  }
-
-  .page-footer__menu-item--topics {
-    width: auto;
-  }
-
-  .page-footer__menu-item--contacts {
-    width: 310px;
-    right: 0;
-  }
-
-  .page-footer__menu-sublist--topics {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 220px auto;
-    grid-template-columns: 220px auto;
-    -ms-grid-rows: (-webkit-min-content)[4];
-    -ms-grid-rows: (min-content)[4];
-    grid-template-rows: repeat(4, -webkit-min-content);
-    grid-template-rows: repeat(4, min-content);
-  }
-
-  .page-footer__menu-item:nth-child(2n) .page-footer__menu-subitem {
-    width: auto;
-  }
-
-  .page-footer__menu-subitem {
-    width: auto;
-  }
-
-  .page-footer__menu-subitem--assembling {
-    -webkit-box-ordinal-group: 6;
-    -ms-flex-order: 5;
-    order: 5;
-  }
-
-  .page-footer__menu-subitem--contacts {
-    -webkit-box-ordinal-group: 5;
-    -ms-flex-order: 4;
-    order: 4;
-  }
-
-  .page-footer__menu-subitem--production {
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
-    order: 3;
-  }
-
-  .page-footer__menu-subitem--products {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-  }
-
-  .page-footer__menu-subitem--delivery {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-  }
-}
 
 @media (max-width: 1023px) {
   .container {
@@ -2297,6 +2289,7 @@ button,
   }
 
   .page-footer__menu-item {
+    right: 0;
     width: auto;
   }
 
