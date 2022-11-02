@@ -1961,6 +1961,7 @@ button,
 
   .page-footer__menu-item--contacts {
     width: 310px;
+    right: 0;
   }
 
   .page-footer__menu-sublist--topics {
@@ -2297,7 +2298,6 @@ button,
 
   .page-footer__menu-item {
     width: auto;
-    right: 0;
   }
 
   .page-footer__menu-sublist {
