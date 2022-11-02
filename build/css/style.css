@@ -906,6 +906,9 @@ button,
   color: #ffffff;
   opacity: 0.8;
   cursor: pointer;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 .modal input[name=modal-agree] {
