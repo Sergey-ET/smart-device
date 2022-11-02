@@ -1647,6 +1647,7 @@ button,
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  row-gap: 20px;
   width: 845px;
   min-height: 170px;
   margin: 0;
@@ -1938,6 +1939,69 @@ button,
   }
 */
 
+@media (max-width: 1919px) {
+  .page-footer__inner {
+    margin-right: auto;
+  }
+
+  .page-footer__menu-item--topics {
+    width: auto;
+  }
+
+  .page-footer__menu-item--contacts {
+    width: 310px;
+  }
+
+  .page-footer__menu-sublist--topics {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 220px auto;
+    grid-template-columns: 220px auto;
+    -ms-grid-rows: (-webkit-min-content)[4];
+    -ms-grid-rows: (min-content)[4];
+    grid-template-rows: repeat(4, -webkit-min-content);
+    grid-template-rows: repeat(4, min-content);
+  }
+
+  .page-footer__menu-subitem--assembling {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+  }
+
+  .page-footer__menu-subitem--contacts {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+  .page-footer__menu-subitem--production {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .page-footer__menu-subitem--products {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .page-footer__menu-subitem--delivery {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .page-footer__menu-item:nth-child(2n) .page-footer__menu-subitem {
+    width: auto;
+  }
+
+  .page-footer__menu-subitem {
+    width: auto;
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 50px;
@@ -2226,7 +2290,25 @@ button,
   }
 
   .page-footer__menu-sublist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
     height: auto;
+  }
+
+  .page-footer__menu-subitem {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
   }
 
   .page-footer__menu-item:nth-child(2n) .page-footer__menu-subitem {
@@ -2564,6 +2646,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    row-gap: 0;
   }
 
   .page-footer__menu-item {
